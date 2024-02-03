@@ -1,0 +1,10 @@
+# Dependency directory
+node_modules/
+
+# Build output
+dist/
+
+# TypeScript generated files
+*.js
+*.js.map
+*.d.ts

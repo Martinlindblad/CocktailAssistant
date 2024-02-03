@@ -1,0 +1,26 @@
+{
+  "include": ["src/**/*", ".eslintrc.js", "dist/**/*", "app.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".eslintrc.js",
+    "web-test-server.config.mjs"
+  ],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "ES6",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "composite": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "noEmit": false,
+    "jsx": "preserve",
+    "checkJs": true
+  }
+}

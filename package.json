@@ -1,0 +1,30 @@
+{
+  "name": "cocktail-assistent",
+  "description": "Cocktail assistent created with Haunted, lit and Typescript",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "tsc && web-dev-server --open --node-resolve",
+    "start:watch": "tsc --watch & web-dev-server --open --node-resolve --watch",
+    "test": "web-test-runner test/**/*.test.ts --node-resolve",
+    "test:watch": "web-test-runner test/**/*.test.ts --node-resolve --watch",
+    "build": "tsc",
+    "build:watch": "tsc --watch"
+  },
+  "dependencies": {
+    "haunted": "^5.0.0",
+    "lit": "^3.1.2",
+    "on-finished": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "@web/dev-server": "^0.4.2",
+    "@web/dev-server-esbuild": "1.0.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-lit": "^1.11.0",
+    "typescript": "^5.3.3"
+  }
+}

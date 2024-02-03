@@ -6,7 +6,7 @@
   "module": "index.js",
   "scripts": {
     "start": "tsc && web-dev-server --open --node-resolve",
-    "start:watch": "tsc --watch & web-dev-server --open --node-resolve --watch",
+    "start:watch": "--watch & web-dev-server --open --node-resolve --watch",
     "test": "web-test-runner test/**/*.test.ts --node-resolve",
     "test:watch": "web-test-runner test/**/*.test.ts --node-resolve --watch",
     "build": "tsc",

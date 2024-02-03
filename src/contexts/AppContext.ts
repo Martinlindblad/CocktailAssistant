@@ -85,8 +85,9 @@ export const AppProvider = component(() => {
       case "Empty":
         return "No results found.";
       case "Exists":
-      default:
         return initialToasterMessage;
+      default:
+        return "";
     }
   };
   const [toasterMessage, toasterDispatch] = useReducer(

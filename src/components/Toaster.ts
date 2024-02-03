@@ -28,7 +28,6 @@ const Toaster = () => {
   const [message, setMessage] = useState<string>();
 
   useEffect(() => {
-    console.log(state.toaster, "state.toaster");
     setMessage(state.toaster);
   }, [state]);
 

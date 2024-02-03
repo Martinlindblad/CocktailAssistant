@@ -61,14 +61,14 @@ const CocktailAssistant = () => {
   useEffect(() => {
     const fetchCocktailData = async () => {
       toasterDispatch({ type: "Searching" });
-
       setError(null);
       try {
         const data = await getCocktails(searchQuery);
         setCocktailData(data);
         if (data) {
           toasterDispatch({ type: "Exists" });
-        } else {
+        }
+        if (data.length === 0) {
           toasterDispatch({ type: "Empty" });
         }
       } catch (error) {

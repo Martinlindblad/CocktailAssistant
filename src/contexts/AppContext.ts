@@ -53,13 +53,18 @@ export const AppProvider = component(() => {
       case "addCocktail": {
         const newIngredients = parseIngredients(action.payload);
         const updatedItems = Array.from(
-          new Set([...state.items, ...newIngredients])
+          new Set(
+            [...state.items, ...newIngredients].map((item) =>
+              item.toLowerCase()
+            )
+          )
         );
         return { ...state, items: updatedItems };
       }
       case "removeIngredient": {
+        const ingredientToRemove = action.payload.toLowerCase();
         const filteredItems = state.items.filter(
-          (item) => item !== action.payload
+          (item) => item.toLowerCase() !== ingredientToRemove
         );
         return { ...state, items: filteredItems };
       }

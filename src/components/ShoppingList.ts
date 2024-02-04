@@ -39,6 +39,7 @@ function ShoppingList() {
     }
     .ingredient-name {
       flex-grow: 1;
+      text-transform: capitalize;
     }
     ul {
       overflow: scroll;

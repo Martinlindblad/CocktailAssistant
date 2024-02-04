@@ -30,7 +30,7 @@ To run the Cocktail Assistant app locally, follow these steps:
 
 1. Install dependencies:
    ```
-   npm run install
+   npm install
 
 2. Build tsc:
    ```
